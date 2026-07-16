@@ -1,0 +1,23 @@
+{
+  "compilerOptions": {
+    "outDir": "dist",
+    "paths": {
+      "@/*": ["./client/*"],
+      "@server/*": ["./server/*"],
+      "@shared/*": ["./shared/*"]
+    },
+    "esModuleInterop": true,
+    "allowSyntheticDefaultImports": true,
+    "skipLibCheck": true,
+    "jsx": "preserve",
+    "module": "NodeNext",
+    "moduleResolution": "NodeNext",
+    "target": "esnext",
+    "lib": ["esnext", "dom"],
+    "forceConsistentCasingInFileNames": true,
+    "strict": true,
+    "ignoreDeprecations": "5.0"
+  },
+  "include": ["server", "shared"],
+  "exclude": ["node_modules", "dist", "client"]
+}
